@@ -1,5 +1,8 @@
 {
   "expo": {
+    "cli": {
+      "appVersionSource": "package.json"
+    },
     "name": "myapp",
     "slug": "myapp",
     "version": "1.0.0",
