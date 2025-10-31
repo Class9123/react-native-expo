@@ -18,19 +18,14 @@ jobs:
           node-version: 18
 
       - name: Install EAS CLI
-        run: npm install -g eas-cli && npm install 
+        run: npm install -g eas-cli && npm install
 
       - name: Verify login
-        run: eas whoami  
+        run: eas whoami
 
       - name: Build Android APK locally
         run: |
-          eas build \
-            --platform android \
-            --local \
-            --non-interactive \
-            --profile production \
-            --output=app-release.apk
+          eas build:configure && eas build --platform android
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
