@@ -21,7 +21,7 @@ jobs:
         run: npm install -g eas-cli && npm install 
 
       - name: Verify login
-        run: eas whoami  # This will work because EXPO_TOKEN is set
+        run: eas whoami  && eas init 
 
       - name: Build Android APK locally
         run: |
