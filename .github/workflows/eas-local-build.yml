@@ -25,7 +25,7 @@ jobs:
 
       - name: Build Android APK locally
         run: |
-          eas build:configure && eas build --platform android
+          eas build --platform android
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
