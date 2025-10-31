@@ -25,7 +25,8 @@ jobs:
 
       - name: Build Android APK locally
         run: |
-          eas build --platform android --profile development --local --non-interactive --output=./app-build
+          eas build --platform android --profile development --local --non-interactive --output=./app-build --skip-credentials-check
+
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
