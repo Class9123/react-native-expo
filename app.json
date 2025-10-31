@@ -1,8 +1,5 @@
 {
   "expo": {
-    "cli": {
-      "appVersionSource": "package.json"
-    },
     "name": "myapp",
     "slug": "myapp",
     "version": "1.0.0",
@@ -46,6 +43,11 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "abbf5891-1430-47cc-87f1-31b6dbec6937"
+      }
     }
   }
 }
